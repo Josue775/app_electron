@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin-left: 80px;
+  margin-top: 80px;
+  transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -webkit-transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -moz-transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -ms-transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -o-transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+main {
+  padding: 20px;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background: #010a11;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 200;
+}
+.logo_menu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+.logo {
+    width: 40px;
+    height: 40px;
+    align-self: flex-start;
+}
+.icon__menu {
+  width: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(10px);
+}
+
+.icon__menu i {
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.menu__side {
+    width: 80px;
+    height: 100%;
+    background: #010a11;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    z-index: 300;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-right: 15px solid #010a11; /* Ajusta el grosor del borde */
+    transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/* Ocultar scroll para chrome, safari y opera */
+.menu__side::-webkit-scrollbar {
+  display: none;
+}
+
+/* Ocultar scroll para IE, Edge y Firefox */
+.menu__side {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.logo {
+    width: 40px; /* Ajusta el ancho deseado */
+    height: 40px; /* Ajusta la altura deseada */
+  }
+.options__menu {
+  padding: 20px 30px;
+  position: absolute;
+  top: 80px;
+}
+
+.options__menu a {
+  color: #ffffffb2;
+  cursor: default;
+  display: block;
+  position: relative;
+  transition: color 300ms;
+}
+
+.options__menu a:hover {
+  color: white;
+}
+
+.options__menu .option {
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.options__menu .option i {
+  width: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.options__menu .option h4 {
+  font-weight: 300;
+  cursor: pointer;
+}
+
+a.selected {
+  color: #fff;
+}
+
+.selected:before {
+  content: '';
+  width: 3px;
+  height: 80%;
+  background: white;
+  position: absolute;
+  top: 10%;
+  left: -30px;
+}
+
+.body_move {
+  margin-left: 250px;
+}
+
+.menu__side_move {
+  width: 250px;
+}
+
+#btn_open {
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .body_move {
+    margin-left: 0px;
+  }
+
+  .menu__side_move {
+    width: 80px;
+    left: -80px;
+  }
+}
+
+.options__menu .sub-menu {
+  display: none;
+}
+
+.options__menu .sub-menu.active {
+  display: block;
+}
+
+.options__menu .option.selected {
+    background-color: #1c263b; /* Cambia el color de fondo de las opciones seleccionadas */
+    color: white; /* Cambia el color de fuente */
+  }
+.options__menu .sub-menu .option {
+    background-color: #0a192f; /* Cambia el color de fondo de los submenús */
+    color: #ffffff; /* Mantiene el color de fuente */
+    padding-left: 30px;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+.options__menu .selected:before {
+  content: '';
+  width: 3px;
+  height: 80%;
+  background: white;
+  position: absolute;
+  top: 10%;
+  left: -30px;
+}
+.options__menu .sub-menu .search input {
+  height: 100%;
+  width: 80%;
+  outline: none;
+  background-color: #ffffff;
+  border: none;
+  font-size: 14px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+.options__menu .sub-menu .search{
+  background-color: #0a192f;
+  cursor: pointer;
+}
