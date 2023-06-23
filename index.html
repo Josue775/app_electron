@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tributaria Buenrostro</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    
+    <header>
+        <div class="icon__menu">
+
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="logo_menu">
+            <img src="image/logo.png" alt="Logo Trubutaria" class="logo">
+        </div>
+
+        <div class="options__menu">	
+            <a href="#">
+                <div class="option">
+                    <i class="fas fa-home" title="Trámites"></i>
+                    <h4>Trámites</h4>
+                    <i class="fas fa-chevron-down arrow"></i>
+                </div>
+                <div class="sub-menu">
+                    <a href="#" onclick="cargarContenido('pages/tramites.html')">
+                        <div class="option">
+                            <i class="fa-solid fa-person" title="fisica"></i>
+                            <h4>Persona Físicas</h4>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="option">
+                            <h4>Persona Moral</h4>
+                        </div>
+                    </a>
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass" title="Trámites"></i>
+                        <input type="text" id="searchInput" placeholder="Buscar...">
+                    </div>
+                    
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="option">
+                    <i class="far fa-file" title="Formularios"></i>
+                    <h4>Formularios</h4>
+                </div>
+            </a>
+            
+            <a href="#">
+                <div class="option">
+                    <i class="fas fa-video" title="Acerca de.."></i>
+                    <h4>Acerca de..</h4>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="option">
+                    <i class="far fa-sticky-note" title="TramitesC"></i>
+                    <h4>Tramites Comunes</h4>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="option">
+                    <i class="far fa-id-badge" title="Contacto"></i>
+                    <h4>Contacto</h4>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+    <main>
+        <div id="contenido">
+            <h1>Algunas leyes</h1><br>
+            <p>1.-Estado de derecho: Es un principio fundamental en el que se establece que todas las personas y entidades están sujetas a las leyes y que estas se aplican de manera justa y equitativa.</p> <br>
+            <p>2.- Constitución: Es el documento fundamental que establece la estructura del gobierno, los derechos y las libertades fundamentales de los ciudadanos, y los límites del poder estatal. Define los principios generales y los derechos básicos de una nación.</p>
+            <br>
+        </div>
+        
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
